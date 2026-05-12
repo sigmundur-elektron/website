@@ -1,6 +1,3 @@
-Needs node and npm installed to run the development server.
-npx serve .
-
 Next steps
 •	Add a backend endpoint at /api/contact for the form
 •	Replace images/about.jpg with your real image (consider WebP format)

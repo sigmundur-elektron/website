@@ -9,7 +9,7 @@ services:
 
   nginx:
     build:
-      context: .docker 
+      context: .
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
@@ -19,6 +19,8 @@ services:
       - /etc/letsencrypt:/etc/letsencrypt:ro
     depends_on:
       - backend
+      - prometheus
+      - loki
 
   prometheus:
     image: prom/prometheus:latest
